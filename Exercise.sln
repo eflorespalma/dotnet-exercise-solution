@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise.Domain", "src\Exer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise.Repository", "src\Exercise.Repository\Exercise.Repository.csproj", "{6DB8A290-AA99-48D6-B246-E5277E54F4B8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise.BizLogic", "src\Exercise.Application\Exercise.BizLogic.csproj", "{8448C16F-E7EA-4109-879C-39BDFB3540C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise.BizLogic", "src\Exercise.BizLogic\Exercise.BizLogic.csproj", "{8448C16F-E7EA-4109-879C-39BDFB3540C7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui", "ui", "{F2E7559A-315B-4ADA-A43A-B681570AD69E}"
 EndProject

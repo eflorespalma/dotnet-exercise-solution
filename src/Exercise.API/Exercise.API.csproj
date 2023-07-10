@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Exercise.Application\Exercise.BizLogic.csproj" />
+    <ProjectReference Include="..\Exercise.BizLogic\Exercise.BizLogic.csproj" />
     <ProjectReference Include="..\Exercise.Repository\Exercise.Repository.csproj" />
   </ItemGroup>
 

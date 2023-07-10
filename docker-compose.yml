@@ -1,0 +1,34 @@
+version: '3.9'
+services:
+  api1:
+    build:
+      context: ./API1
+      dockerfile: Dockerfile
+    ports:
+      - "8001:80"
+    environment:
+      - ENV_VARIABLE_1=value1
+      - ENV_VARIABLE_2=value2
+      - ConnectionStrings__DatabaseConnection=${ConnectionStrings__DatabaseConnection}
+    depends_on:
+      - sql-server
+
+  api2:
+    build:
+      context: ./API2
+      dockerfile: Dockerfile
+    ports:
+      - "8002:80"
+    environment:
+      - ENV_VARIABLE_1=value1
+      - ENV_VARIABLE_2=value2
+      - ConnectionStrings__DatabaseConnection=${ConnectionStrings__DatabaseConnection}
+    depends_on:
+      - sql-server
+
+  sql-server:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrongPassword123
+      - ConnectionStrings__DatabaseConnection=Server=sql-server;Database=YourDatabase;User=sa;Password=YourPassword;MultipleActiveResultSets=true
