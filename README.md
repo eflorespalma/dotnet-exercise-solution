@@ -1,3 +1,37 @@
+# Project Overview
+
+## API Layer
+- Responsible for exposing the project's functionalities as RESTful API endpoints.
+- Handles incoming requests, authorization, and request validation.
+- Utilizes Serilog for implementing structured logs in physical files.
+- Implements a global filter to handle exceptions in a centralized location.
+- Implements the problem details specification to provide a standardized structure for error responses.
+- Uses the Swagger library for documenting the endpoints.
+
+## Identity Layer
+- Manages user authentication and authorization using a simple approach to generate a JWT token based on user credentials.
+- Provides services for token generation and login validation.
+
+## Business Logic
+- Contains the core business logic and rules of the application.
+- Implements the unit of work pattern in this layer for handling multiple database operations.
+- Uses FluentValidations to facilitate data validation and separate the validation logic from the core business code.
+
+## Domain Layer
+- Represents the domain model of the application.
+- Only the entity is responsible for modifying its properties, either through constructors for initialization or methods within the same object.
+
+## Repository Layer
+- Implements data access and persistence using Dapper.
+- Provides repositories for interacting with the database.
+- Utilizes the Unit of Work pattern for managing transactions.
+- Implements a simple generic implementation above Dapper, which is necessary for facilitating unit tests for the repositories.
+
+## Unit Tests
+- Contains test cases to verify the functionality and behavior of the project.
+- Uses XUNIT as the testing framework and FluentAssertions for expressive assertions.
+- Follows the AAA Pattern (Arrange, Act, Assert) for organizing test code.
+  
 # Prerequisites
 
 Before running the solution, make sure you have the following:
@@ -90,39 +124,4 @@ The project includes the launchsetting.json files for both the Identity.API and 
 ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/2bd93a5d-5ef0-43b5-8d59-1916c572330f)
 
 --- 
-
-
-# Project Overview
-
-## API Layer
-- Responsible for exposing the project's functionalities as RESTful API endpoints.
-- Handles incoming requests, authorization, and request validation.
-- Utilizes Serilog for implementing structured logs in physical files.
-- Implements a global filter to handle exceptions in a centralized location.
-- Implements the problem details specification to provide a standardized structure for error responses.
-- Uses the Swagger library for documenting the endpoints.
-
-## Identity Layer
-- Manages user authentication and authorization using a simple approach to generate a JWT token based on user credentials.
-- Provides services for token generation and login validation.
-
-## Business Logic
-- Contains the core business logic and rules of the application.
-- Implements the unit of work pattern in this layer for handling multiple database operations.
-- Uses FluentValidations to facilitate data validation and separate the validation logic from the core business code.
-
-## Domain Layer
-- Represents the domain model of the application.
-- Only the entity is responsible for modifying its properties, either through constructors for initialization or methods within the same object.
-
-## Repository Layer
-- Implements data access and persistence using Dapper.
-- Provides repositories for interacting with the database.
-- Utilizes the Unit of Work pattern for managing transactions.
-- Implements a simple generic implementation above Dapper, which is necessary for facilitating unit tests for the repositories.
-
-## Unit Tests
-- Contains test cases to verify the functionality and behavior of the project.
-- Uses XUNIT as the testing framework and FluentAssertions for expressive assertions.
-- Follows the AAA Pattern (Arrange, Act, Assert) for organizing test code.
 
