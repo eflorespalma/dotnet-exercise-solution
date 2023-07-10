@@ -8,16 +8,16 @@ Before running the solution, make sure you have the following:
 # Steps to Run Locally with Visual Studio
 
 1. Navigate to the "scripts" folder located in the root directory and execute the database creation script.
-   
-   ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/0846519f-23db-4a8e-927b-928453b9ec8e)
-
 2. The solution is running with local certificates. If you intend to test it with Postman, please note that you need to disable the "Enable SSL certificate verification" option.
-3. Open the solution in Visual Studio, and the first thing you need to do is set multiple startup projects. Select Exercise.API, Exercise.UI, and Exercise.Identity projects.
 
-   ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/1e178e41-ec1f-4f45-907c-d0d6f41ff95f)
+   ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/6380b601-ca22-42a5-9b2e-e4efc779cc1b)
+   
+4. Open the solution in Visual Studio, and the first thing you need to do is set multiple startup projects. Select Exercise.API, Exercise.UI, and Exercise.Identity projects.
 
-4. Proceed to run the project.
-5. Once it is executed, three default browser tabs will open on your machine. If you have reached this point without any issues, you can start exploring the solution.
+    ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/39f84a7c-25a9-4546-a120-021337e36a4b)
+   
+6. Proceed to run the project.
+7. Once it is executed, three browser tabs will open on your machine. If you have reached this point without any issues, you can start exploring the solution.
 
 # Steps to Invoke Services
 
@@ -36,7 +36,7 @@ To invoke the Exercise.API enpoints, it is important to note that is protected b
         "Password" : "*1nd3strvct1bl3*"
     }
     ```
-![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/72faf033-f634-491c-ac0d-689d0b3a665a)
+![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/afc5b420-e655-4f91-b96c-aa6837bc9206)
 
 **Registering a New User:**
 
@@ -51,7 +51,7 @@ To invoke the Exercise.API enpoints, it is important to note that is protected b
         "Password" : "*IZI321*"
     }
     ```
-![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/de407c67-4a93-4aaa-b9c8-31b197bae54b)
+![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/6b07b090-5bee-4c06-a034-85d46cbdfd66)
 
 5. Once the new user is registered, you can retrieve a new token using the newly created user. To do this, repeat steps 1 to 4 from the first method, replacing the values with the credentials of the new user.
 
