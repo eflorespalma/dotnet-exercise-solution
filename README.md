@@ -76,12 +76,37 @@ With the generated token, you can now use the product endpoints of the Exercise.
 
 ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/49058c41-8daa-4ad3-8fb1-d775c3eaae6a)
 
-# Solution Components
+# Project Overview
 
-1. Identity.API: This solution covers the authorization requirement for resources. It generates an access token if the provided user credentials are correct. Please note that this solution is for demo purposes. For production environments, more robust identity providers such as Identity Server, OKTA, Azure AD, etc., should be used.
-2. Exercise.API: This project hosts the endpoints created for the exercise.
-3. Exercise.BizLogic: This project contains the business rules and validations for the exercise.
-4. Exercise.Repository: This project manages database operations using the Dapper library. It also implements the Unit of Work pattern to handle transactions more effectively and avoid direct database operations repetition.
-5. Exercise.Domain: This project contains all the domain classes, in this case, User and Product.
-6. Exercise.Test: This project covers all the neccesary unit test for the different layers.
-7. Exercise.Database: This roject allows us to maintain change control of the different objects of the database
+## API Layer
+- Responsible for exposing the project's functionalities as RESTful API endpoints.
+- Handles incoming requests, authorization, and request validation.
+- Utilizes Serilog for implementing structured logs in physical files.
+- Implements a global filter to handle exceptions in a centralized location.
+- Implements the problem details specification to provide a standardized structure for error responses.
+- Uses the Swagger library for documenting the endpoints.
+
+## Identity Layer
+- Manages user authentication and authorization using a simple approach to generate a JWT token based on user credentials.
+- Provides services for token generation and login validation.
+
+## Business Logic
+- Contains the core business logic and rules of the application.
+- Implements the unit of work pattern in this layer for handling multiple database operations.
+- Uses FluentValidations to facilitate data validation and separate the validation logic from the core business code.
+
+## Domain Layer
+- Represents the domain model of the application.
+- Only the entity is responsible for modifying its properties, either through constructors for initialization or methods within the same object.
+
+## Repository Layer
+- Implements data access and persistence using Dapper.
+- Provides repositories for interacting with the database.
+- Utilizes the Unit of Work pattern for managing transactions.
+- Implements a simple generic implementation above Dapper, which is necessary for facilitating unit tests for the repositories.
+
+## Unit Tests
+- Contains test cases to verify the functionality and behavior of the project.
+- Uses XUNIT as the testing framework and FluentAssertions for expressive assertions.
+- Follows the AAA Pattern (Arrange, Act, Assert) for organizing test code.
+
