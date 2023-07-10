@@ -11,6 +11,7 @@
 ## Identity Layer
 - Manages user authentication and authorization using a simple approach to generate a JWT token based on user credentials.
 - Provides services for token generation and login validation.
+- This was created for demo purpose in case we need an identityserver for production environment, we could choose OKTA, IdentityServer4, Duende Identity Server, Azure AD, etc. 
 
 ## Business Logic
 - Contains the core business logic and rules of the application.
