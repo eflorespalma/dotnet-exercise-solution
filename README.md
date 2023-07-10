@@ -11,16 +11,20 @@ Before running the solution, make sure you have the following:
 
    ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/280dcc83-59ea-4fae-befa-337c4e8963a8)
    
-2. The solution is running with local certificates. If you intend to test it with Postman, please note that you need to disable the "Enable SSL certificate verification" option.
+2. Modify ConnectionString for Identity.API and Exercise.API project, you can do this in the appsettings.json file.
+   
+   ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/6346f4ae-325c-4748-ae0c-6ff436d4103d)
+
+3. The solution is running with local certificates. If you intend to test it with Postman, please note that you need to disable the "Enable SSL certificate verification" option.
 
    ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/6380b601-ca22-42a5-9b2e-e4efc779cc1b)
    
-3. Open the solution in Visual Studio, and the first thing you need to do is set multiple startup projects. Select Exercise.API, Exercise.UI, and Exercise.Identity projects.
+4. Open the solution in Visual Studio, and the first thing you need to do is set multiple startup projects. Select Exercise.API, Exercise.UI, and Exercise.Identity projects.
 
     ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/39f84a7c-25a9-4546-a120-021337e36a4b)
    
-4. Proceed to run the project.
-5. Once it is executed, three browser tabs will open on your machine. If you have reached this point without any issues, you can start exploring the solution.
+5. Proceed to run the project.
+6. Once it is executed, three browser tabs will open on your machine. If you have reached this point without any issues, you can start exploring the solution.
 
 # Steps to Invoke Services
 
@@ -53,7 +57,7 @@ To invoke the Exercise.API enpoints, it is important to note that is protected b
         "Email": "iamdeveloper@gmail.com",
         "Password" : "*IZI321*"
     }
-    ```
+    ```  
 ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/6b07b090-5bee-4c06-a034-85d46cbdfd66)
 
 5. Once the new user is registered, you can retrieve a new token using the newly created user. To do this, repeat steps 1 to 4 from the first method, replacing the values with the credentials of the new user.
@@ -75,6 +79,17 @@ With the generated token, you can now use the product endpoints of the Exercise.
 6. Finally, a UI with Blazor was added, where a service is consumed. It is important to note that, for demonstration purposes, a public endpoint was enabled using the [AllowAnonymous] attribute
 
 ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/49058c41-8daa-4ad3-8fb1-d775c3eaae6a)
+
+ ---
+**NOTE**
+
+The project includes the launchsetting.json files for both the Identity.API and Exercise.API projects. If you encounter any issues with the defined port and need to use a different one, you will need to modify certain properties in the appsettings.json file.
+
+## Modify properties in both Identity.API and Exercise.API projects
+
+![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/2bd93a5d-5ef0-43b5-8d59-1916c572330f)
+
+--- 
 
 # Project Overview
 
