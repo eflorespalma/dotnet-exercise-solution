@@ -7,7 +7,7 @@ Before running the solution, make sure you have the following:
 
 # Steps to Run Locally with Visual Studio
 
-1. Navigate to the "scripts" folder located in the root directory and execute the database creation script.
+1. Navigate to the "scripts" folder located in the root directory and execute the database creation script. It will create all the neccesary objects to execute the solution properly.
 
    ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/280dcc83-59ea-4fae-befa-337c4e8963a8)
    
