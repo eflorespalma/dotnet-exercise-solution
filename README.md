@@ -32,6 +32,10 @@
 - Contains test cases to verify the functionality and behavior of the project.
 - Uses XUNIT as the testing framework and FluentAssertions for expressive assertions.
 - Follows the AAA Pattern (Arrange, Act, Assert) for organizing test code.
+
+## UI
+- Blazor Client Side project, it's only a demo that demonstrates the invokation of a single endpoint from the solution.
+
   
 # Prerequisites
 
