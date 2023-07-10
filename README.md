@@ -57,17 +57,21 @@ To invoke the Exercise.API enpoints, it is important to note that is protected b
 
 With the generated token, you can now use the product endpoints of the Exercise.API project. You can use either Swagger or Postman. Please remember to add the following header: Authorization: Bearer [TOKEN_GENERATED]. In Swagger, the "Authorize" button is enabled for you to enter the token.
 
-![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/49c39f28-eb0b-484f-ba8c-428d1ba16929)
+## Not Access
+![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/ba1a60de-2dae-41d1-b07f-b2c236433307)
 
-![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/e75c8bce-abd6-4eb8-bd7f-1a9ab17e31c2)
+## Authorize Button
+![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/078539b5-45f3-489f-a8f8-debce8987cef)
 
-![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/8d4bb34c-9e6b-4774-86ea-4940fbcba8d8)
+## Insert Token and Authorize
+![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/839a94a4-d37c-49d8-8289-ee82aec4e8e1)
 
-![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/67c94f98-e391-4819-aeb4-e962b3a76e47)
+## Retrieve Products
+![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/3cc3712f-8054-44ba-8ddf-b8e0b99a532d)
 
 6. Finally, a UI with Blazor was added, where a service is consumed. It is important to note that, for demonstration purposes, a public endpoint was enabled using the [AllowAnonymous] attribute
 
-![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/aa168e68-3b5c-4e1d-a757-6d42cdf7ab0f)
+![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/49058c41-8daa-4ad3-8fb1-d775c3eaae6a)
 
 # Solution Components
 
