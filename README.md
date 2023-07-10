@@ -8,16 +8,19 @@ Before running the solution, make sure you have the following:
 # Steps to Run Locally with Visual Studio
 
 1. Navigate to the "scripts" folder located in the root directory and execute the database creation script.
+
+   ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/280dcc83-59ea-4fae-befa-337c4e8963a8)
+   
 2. The solution is running with local certificates. If you intend to test it with Postman, please note that you need to disable the "Enable SSL certificate verification" option.
 
    ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/6380b601-ca22-42a5-9b2e-e4efc779cc1b)
    
-4. Open the solution in Visual Studio, and the first thing you need to do is set multiple startup projects. Select Exercise.API, Exercise.UI, and Exercise.Identity projects.
+3. Open the solution in Visual Studio, and the first thing you need to do is set multiple startup projects. Select Exercise.API, Exercise.UI, and Exercise.Identity projects.
 
     ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/39f84a7c-25a9-4546-a120-021337e36a4b)
    
-6. Proceed to run the project.
-7. Once it is executed, three browser tabs will open on your machine. If you have reached this point without any issues, you can start exploring the solution.
+4. Proceed to run the project.
+5. Once it is executed, three browser tabs will open on your machine. If you have reached this point without any issues, you can start exploring the solution.
 
 # Steps to Invoke Services
 
