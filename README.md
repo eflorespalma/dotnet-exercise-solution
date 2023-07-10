@@ -122,7 +122,7 @@ With the generated token, you can now use the product endpoints of the Exercise.
  ---
 **NOTE**
 
-The project includes the launchsetting.json files for both the Identity.API and Exercise.API projects. If you encounter any issues with the defined port and need to use a different one, you will need to modify certain properties in the appsettings.json file.
+The projects include the launchsetting.json files for both the Identity.API and Exercise.API projects. If you encounter any issues with the defined port and need to use a different one, you will need to modify certain properties in both appsettings.json files.
 
 ### Modify properties in both Identity.API and Exercise.API projects
 
