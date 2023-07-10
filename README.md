@@ -85,11 +85,12 @@ With the generated token, you can now use the product endpoints of the Exercise.
 
 The project includes the launchsetting.json files for both the Identity.API and Exercise.API projects. If you encounter any issues with the defined port and need to use a different one, you will need to modify certain properties in the appsettings.json file.
 
-## Modify properties in both Identity.API and Exercise.API projects
+### Modify properties in both Identity.API and Exercise.API projects
 
 ![image](https://github.com/eflorespalma/dotnet-exercise-solution/assets/2238801/2bd93a5d-5ef0-43b5-8d59-1916c572330f)
 
 --- 
+
 
 # Project Overview
 
