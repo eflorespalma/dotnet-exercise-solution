@@ -71,7 +71,7 @@ namespace Exercise.Tests.BizLogic
         }
 
         [Fact]
-        public async Task CreateProduct_ExistingEmail_RollsBackTransaction()
+        public async Task CreateProduct_ExistingProduct_RollsBackTransaction()
         {
             // Arrange
             var productRepositoryMock = new Mock<IProductRepository>();

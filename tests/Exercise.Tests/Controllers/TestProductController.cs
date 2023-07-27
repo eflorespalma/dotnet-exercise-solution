@@ -60,7 +60,7 @@ namespace Exercise.Tests.Controllers
         }
 
         [Fact]
-        public async Task GetProducts_OnSuccess_ReturnListOfUsers()
+        public async Task GetProducts_OnSuccess_ReturnListOfProducts()
         {
             //arrange
 

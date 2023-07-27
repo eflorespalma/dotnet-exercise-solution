@@ -27,12 +27,20 @@ namespace Exercise.BizLogic.Products
 
         public async Task<GetProductByIdModel> GetProductById(int id)
         {
-            using var connection = new SqlConnection(_connectionString);
-            await connection.OpenAsync();
-            var parameters = new DynamicParameters();
-            parameters.Add("@Id", id, DbType.Int32);
+            try
+            {
+                using var connection = new SqlConnection(_connectionString);
+                await connection.OpenAsync();
+                var parameters = new DynamicParameters();
+                parameters.Add("@Id", id, DbType.Int32);
 
-            return await connection.QueryFirstOrDefaultAsync<GetProductByIdModel>("[dbo].[GetProductById]", parameters, commandType: CommandType.StoredProcedure);
+                return await connection.QueryFirstOrDefaultAsync<GetProductByIdModel>("[dbo].[GetProductById]", parameters, commandType: CommandType.StoredProcedure);
+            }
+            catch (Exception)
+            {
+
+               //logger
+            }
         }
     }
 }

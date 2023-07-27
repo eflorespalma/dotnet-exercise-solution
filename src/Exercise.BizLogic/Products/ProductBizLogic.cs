@@ -34,6 +34,8 @@ namespace Exercise.BizLogic.Products
                 var product_entity = new Product(model.Name, model.Description, model.Price, model.Quantity, model.RegistrationUser);
 
                 id = await _unitofWork._productRepository.CreateProduct(product_entity);
+
+
                 _unitofWork.Commit();
             }
             catch (Exception)
